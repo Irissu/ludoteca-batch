@@ -1,0 +1,10 @@
+INSERT INTO game (title, age, stock) VALUES ('Hombres Lobo', 10, 5);
+INSERT INTO game (title, age, stock) VALUES ('Aventureros al Tren', 12, 3);
+INSERT INTO game (title, age, stock) VALUES ('Timeline', 18, 7);
+INSERT INTO game (title, age, stock) VALUES ('Ciudadela', 16, 9);
+INSERT INTO game (title, age, stock) VALUES ('Catan', 10, 4);
+INSERT INTO game (title, age, stock) VALUES ('Virus', 12, 0);
+INSERT INTO game (title, age, stock) VALUES ('Samurai Sword', 8, 8);
+INSERT INTO game (title, age, stock) VALUES ('Arkham Horror', 12, 1);
+INSERT INTO game (title, age, stock) VALUES ('Carcassonne', 8, 0);
+INSERT INTO game (title, age, stock) VALUES ('Dixit', 10, 2);
