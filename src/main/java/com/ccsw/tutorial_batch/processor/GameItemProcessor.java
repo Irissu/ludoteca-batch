@@ -10,7 +10,7 @@ public class GameItemProcessor implements ItemProcessor<Game, GameAvailability> 
     @Override
     public GameAvailability process(Game game) {
         System.out.println("Processing game: " + game);
-        String hasStock = game.getStock() > 0 ? "disponible" : "NO disponible";
+        String hasStock = game.getStock() > 0 ? "available" : "NOT available";
         return new GameAvailability(game.getTitle(), hasStock);
     }
 }

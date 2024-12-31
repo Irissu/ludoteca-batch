@@ -1,5 +1,6 @@
 package com.ccsw.tutorial_batch.config;
 
+import com.ccsw.tutorial_batch.listener.JobGameCompletionNotificationListener;
 import com.ccsw.tutorial_batch.model.Game;
 import com.ccsw.tutorial_batch.model.GameAvailability;
 import com.ccsw.tutorial_batch.processor.GameItemProcessor;
@@ -47,8 +48,8 @@ public class GameBatchConfiguration {
     }
 
     @Bean
-    public Job jobGame(JobRepository jobRepository, Step step1Game) {
-        return new JobBuilder("jobGame", jobRepository).incrementer(new RunIdIncrementer()).flow(step1Game).end().build();
+    public Job jobGame(JobRepository jobRepository, JobGameCompletionNotificationListener listener, Step step1Game) {
+        return new JobBuilder("jobGame", jobRepository).incrementer(new RunIdIncrementer()).listener(listener).flow(step1Game).end().build();
     }
 
 }

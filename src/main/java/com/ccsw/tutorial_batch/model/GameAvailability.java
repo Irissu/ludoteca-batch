@@ -41,6 +41,6 @@ public class GameAvailability {
 
     @Override
     public String toString() {
-        return "Disponibilidad: {" + "Titulo='" + title + '\'' + ", Disponible=" + hasStock + '}';
+        return "Stock: {" + "Title='" + title + '\'' + ", Availability=" + hasStock + '}';
     }
 }
